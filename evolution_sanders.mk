@@ -21,6 +21,7 @@ $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_USES_MINI_GAPPS := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_BRAND := motorola
