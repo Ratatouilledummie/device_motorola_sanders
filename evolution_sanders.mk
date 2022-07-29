@@ -15,16 +15,17 @@
 # Inherit from sanders device
 $(call inherit-product, device/motorola/sanders/device.mk)
 
-# Inherit some common Pixel Experience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-TARGET_GAPPS_ARCH := arm64
+# Inherit common Evolution-X Stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+
+# Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_SUPPORTS_QUICK_TAP := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
-PRODUCT_NAME := aosp_sanders
+PRODUCT_NAME := evolution_sanders
 PRODUCT_DEVICE := sanders
 PRODUCT_MODEL := Moto G (5S) Plus
 
